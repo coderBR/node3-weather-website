@@ -13,7 +13,8 @@ const forecast = (latitude, longitude, callback) => {
             callback(undefined, {
                 weather_description: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
-                feelsLike: body.current.feelslike
+                feelsLike: body.current.feelslike,
+                humidity: body.current.humidity
             })   
         }
     })
